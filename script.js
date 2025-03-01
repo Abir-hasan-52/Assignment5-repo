@@ -47,3 +47,6 @@ const clearLogBtn = document.getElementById("clear-log-btn");
          
      });
  }
+
+
+alert("hey");
