@@ -49,4 +49,13 @@ const clearLogBtn = document.getElementById("clear-log-btn");
  }
 
 
-alert("hey");
+// log section added;
+
+function openNewPage() {
+    window.open("blogs.html", "_blank");  
+}
+
+// back 
+function goToHome() {
+    window.location.href = "index.html"; 
+}
