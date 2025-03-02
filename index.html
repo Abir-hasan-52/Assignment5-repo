@@ -44,9 +44,9 @@
     </header>
     <main class=" max-w-7xl  mx-auto">
       <section class="bg-white mt-6 rounded-3xl">
-        <section class="grid grid-cols-4  p-4 gap-4 ">
+        <section class="grid  grid-cols-4 p-4 gap-4 ">
           <!-- box-1 -->
-          <div class="flex justify-center items-center bg-slate-200 rounded-xl p-2 gap-2 h-[100px]">
+          <div class="flex flex-1 justify-center items-center bg-slate-200 rounded-xl p-2 gap-2 ">
             <img class=" bg-white p-2 rounded-full" src="assets/checkbox.png" alt="">
             <div>
               <p class="text-sm font-semibold text-gray-500">Task Assigned</p>
@@ -54,7 +54,7 @@
             </div>
           </div>
           <!-- box-2 -->
-          <div onclick="openNewPage()" class="flex justify-center items-center bg-gradient-to-r from-indigo-600 to-indigo-400 px-2 gap-4 h-[100px]  rounded-2xl shadow-2xl">
+          <div onclick="openNewPage()" class="flex flex-[2] justify-center items-center bg-gradient-to-r from-indigo-600 to-indigo-400 px-2 gap-4 rounded-2xl shadow-2xl">
             <img src="assets/board.png" alt="">
             <div>
               <p  class="text-white "> Discover Something <br />
@@ -62,11 +62,11 @@
             </div>
           </div>
           <!-- box-3 -->
-          <div class="flex justify-center items-center bg-slate-200 rounded-2xl shadow-2xl gap-3 h-[100px]">
+          <div class="flex flex-1 justify-center items-center bg-slate-200 rounded-2xl shadow-2xl gap-3 ">
             <img class=" bg-white p-2 rounded-full  " src="assets/calender.png" alt="" />
             <div>
               <h5 class="font-semibold">Wed,</h5>
-              <time  class="text-xl font-bold" datetime="">Jul 28 2025</time>
+              <time id="live-time" class="text-xl font-bold" datetime="">Jul 28 2025</time>
             </div>
           </div>
           <!-- box-4 -->

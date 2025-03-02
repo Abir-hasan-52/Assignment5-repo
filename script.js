@@ -20,9 +20,14 @@ const clearLogBtn = document.getElementById("clear-log-btn");
         const title = complete.getAttribute("data-title");
          if (count > 0) { // zero nice jeno na jai
              count--; // 1 , 1 kore kombe
+             alert('Board Update Successfully');
              document.getElementById("counter").innerText = count; // update kore dilam
              totalScore++;
             document.getElementById("total-score").innerText = totalScore;
+
+         }
+         if(count === 0){
+            alert('Congrates!!! You Have Completed All the Current Task');
          }
          complete.disabled = true;
          complete.style.backgroundColor = "#FFFFFF";
@@ -59,3 +64,8 @@ function openNewPage() {
 function goToHome() {
     window.location.href = "index.html"; 
 }
+
+// live time showing.
+const liveTime = document.getElementById("live-time");
+const today = new Date().toISOString().split('T')[0];
+liveTime.innerText=today;
